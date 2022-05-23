@@ -21,3 +21,19 @@ int RongNuoc::tinhSucSatThuong()
 
     return mucSatThuong * 10;
 }
+
+RongNuoc::RongNuoc(RongNuoc &rongNuoc)
+{
+    this->ten = rongNuoc.ten;
+    this->capDo = rongNuoc.capDo;
+    this->HP = rongNuoc.HP;
+    this->mucSatThuong = rongNuoc.mucSatThuong;
+}
+RongNuoc &RongNuoc::operator=(RongNuoc &rongNuoc)
+{
+    this->ten = rongNuoc.ten;
+    this->capDo = rongNuoc.capDo;
+    this->HP = rongNuoc.HP;
+    this->mucSatThuong = rongNuoc.mucSatThuong;
+    return *this;
+}
