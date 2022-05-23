@@ -13,7 +13,7 @@ void RongLua::nhapThongTin()
 }
 void RongLua::xuatThongTin()
 {
-    cout << "Day là rong lua\n";
+    cout << "Day la rong lua\n";
     Rong::xuatThongTin();
 }
 int RongLua::tinhSucSatThuong()
